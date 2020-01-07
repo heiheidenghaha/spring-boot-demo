@@ -1,6 +1,7 @@
 <h1 align="center"><a href="https://github.com/xkcoding" target="_blank">Spring Boot Demo</a></h1>
 <p align="center">
   <a href="https://travis-ci.com/xkcoding/spring-boot-demo"><img alt="Travis-CI" src="https://travis-ci.com/xkcoding/spring-boot-demo.svg?branch=master"/></a>
+  <a href="https://www.codacy.com/app/xkcoding/spring-boot-demo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=xkcoding/spring-boot-demo&amp;utm_campaign=Badge_Grade"><img alt="Codacy" src="https://api.codacy.com/project/badge/Grade/1f2e3d437b174bfc943dae1600332ec1"/></a>
   <a href="https://xkcoding.com"><img alt="author" src="https://img.shields.io/badge/author-Yangkai.Shen-blue.svg"/></a>
   <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html"><img alt="JDK" src="https://img.shields.io/badge/JDK-1.8.0_162-orange.svg"/></a>
   <a href="https://docs.spring.io/spring-boot/docs/2.1.0.RELEASE/reference/html/"><img alt="Spring Boot" src="https://img.shields.io/badge/Spring Boot-2.1.0.RELEASE-brightgreen.svg"/></a>
@@ -19,36 +20,41 @@
 
 ## Introduction
 
-`spring boot demo `  is a project for learning and practice `spring boot`, with a total of `57` integrated demos, and `47` have been completed.
+`spring boot demo` is a project for learning and practicing `spring boot`, including `65` demos, and `52` of them have been done.
 
-The project has successfully integrated actuator (`monitoring`), admin (`visual monitoring`), logback (`log`), aopLog (`recording web request logs through AOP`), global exception handling (`json level and page level` ), freemarker (`template engine`), thymeleaf (`template engine`), Beetl (`template engine`), Enjoy (`template engine`), JdbcTemplate (`general JDBC operate database`), JPA (`powerful ORM framework `), mybatis (`powerful ORM framework`), Generic Mapper (`mybatis quick operation `), PageHelper (`powerful mybatis pagination plugin`), mybatis-plus (`mybatis quick operation`), BeetlSQL (`powerful ORM framework `), upload (`local file upload and qiniu cloud file upload`), redis (`cache`), ehcache (`cache`), email (`send various types of mail`), task (`basic scheduled tasks`), quartz (`dynamic management scheduled tasks`), xxl-job (`distributed scheduled tasks`), swagger (`API interface management and tests`), security (`RBAC-based Dynamic Rights Authentication`), SpringSession (`session sharing`), Zookeeper (`implement distributed locks by AOP`), RabbitMQ (`message queue`), Kafka (`message queue`), websocket (` server pushes the monitoring server status to front end `), socket.io (`chat room`), ureport2 (`Chinese-style report`), packaged into a `war` file, integrates ElasticSearch (`basic operations and advanced queries`), Async ( `asynchronous tasks`), integrated Dubbo (`with official starter`), MongoDB (`document database`), neo4j (`graph database`), docker (`container`), `JPA Multi-Datasource`, `Mybatis Multi-Datasource`, `code generator`', GrayLog (`log collection`), JustAuth (`third-party login`).
+This project has integrated actuator (`monitoring`), admin (`visual monitoring`), logback (`log`), aopLog (`recording web request logs through AOP`), global exception handling (`json level and page level` ), freemarker (`template engine`), thymeleaf (`template engine`), Beetl (`template engine`), Enjoy (`template engine`), JdbcTemplate (`general JDBC operate database`), JPA (`powerful ORM framework `), mybatis (`powerful ORM framework`), Generic Mapper (`mybatis quick operation `), PageHelper (`powerful mybatis pagination plugin`), mybatis-plus (`mybatis quick operation`), BeetlSQL (`powerful ORM framework `), upload (`local file upload and qiniu cloud file upload`), redis (`cache`), ehcache (`cache`), email (`send various types of mail`), task (`basic scheduled tasks`), quartz (`dynamic management scheduled tasks`), xxl-job (`distributed scheduled tasks`), swagger (`API interface management and tests`), security (`RBAC-based Dynamic Rights Authentication`), SpringSession (`session sharing`), Zookeeper (`implement distributed locks by AOP`), RabbitMQ (`message queue`), Kafka (`message queue`), websocket (` server pushes the monitoring server status to front end `), socket.io (`chat room`), ureport2 (`Chinese-style report`), packaged into a `war` file, integrate ElasticSearch (`basic operations and advanced queries`), Async ( `asynchronous tasks`), integrated Dubbo (`with official starter`), MongoDB (`document database`), neo4j (`graph database`), docker (`container`), `JPA Multi-Datasource`, `Mybatis Multi-Datasource`, `code generator`', GrayLog (`log collection`), JustAuth (`third-party login`), LDAP(`CURD`), `Dynamically add/switch datasources`, Standalone RateLimiting(`AOP + Guava RateLimiter`), Distributed Ratelimiting(`AOP + Redis + Lua`), ElasticSearch 7.x(`use official Rest High Level Client`).
 
-> If you still have a demo that you want to integrate, you can also request it in [issue](https://github.com/xkcoding/spring-boot-demo/issues/new). I will add it to the [TODO](./TODO.en.md) list.✊
+> If you have demos to contribute or needs to meet, it is very welcome to submit a [issue](https://github.com/xkcoding/spring-boot-demo/issues/new) and I will add it to my [TODO](./TODO.en.md) list.
 
-## Branches
+## Thanks
 
-- master: Based on the Spring Boot version `2.1.0.RELEASE`, the parent of each Module depends on the pom.xml in the root directory, which is mainly used to manage the generic dependencies' version of each Module. It's easier to learn this project.
-- v-1.5.x: Based on the Spring Boot version `1.5.8.RELEASE`, each module depends on spring-boot-demo-parent. There are quite a few friends who report that this way is not very friendly to rookies and it is a little difficult to run this project, so ***The branch (v-1.5.x) will stop development and maintenance***, and all the content will be slowly synchronized to the master branch. If this branch is not completed yet in the TODO list, it will be added directly to the master branch. Everyone can still learn in this branch, but still suggest to switch to the master branch in the future. After all, the official has been upgraded to the Spring Boot version `2.x`. 🙂
+<a href="https://www.jetbrains.com/?from=spring-boot-demo"><img src="assets/jetbrains.png" width="100px" alt="jetbrains">**Thanks JetBrains Offer Open Source Free License**</a>
+
+## Branch Introduction
+
+- branch master: Based on Spring Boot version `2.1.0.RELEASE`. Every module's parent dependency is the pom.xml at root directory in convenience of managing common dependencies and learning spring boot.
+- branch v-1.5.x: Based on Spring Boot version `1.5.8.RELEASE`. Every module's parent dependency is spring-boot-demo-parent. But since the feedback shows that it is not much friendly to many new learners, this branch will not be mantained any more. All of the demos will be moved to branch master. Everyone could still study at this branch but it's suggested to study at branch master while Spring Boot has much new content over version `2.x`.
 
 ## Environment
 
 - **JDK 1.8 +**
 - **Maven 3.5 +**
-- **IntelliJ IDEA ULTIMATE 2018.2 +** (*Note: Be sure to use IDEA and ensure that the `lombok` plugin is installed.*)
-- **Mysql 5.7 +** (*Try to be sure to use version 5.7 or higher, because version 5.7 adds some new features and is not backward compatible. This project will try to avoid this incompatibility, but it is recommended to ensure 5.7 or higher.*)
+- **IntelliJ IDEA ULTIMATE 2018.2 +** (*Note: Please use IDEA and make sure plugin `lombok` installed.*)
+- **Mysql 5.7 +** (*Please use version 5.7 or higher because mysql has some new features and is not backward compatible at version 5.7. Althought this project will try to avoid this incompatibility*)
 
 ## Getting Started
 
-1. `git clone https://github.com/xkcoding/spring-boot-demo.git`
-2. Open the cloned project using IDEA
-3. Open the project in IDEA
-4. Import the `pom.xml` file from the root of the project using the `Maven Projects` panel
-5. If you can not find the `Maven Projects` panel, you can try to check `View -> Tool Buttons` on the top toolbar of IDEA and the `Maven Projects` panel will appear on the right side of IDEA.
-6. 找到各个 Module 的 Application 类就可以运行各个 demo 了
-7. **`Note: Each demo has a detailed README file. Remember to check it before running the demo~`**
-8. **`Note: Before running each demo, some need to initialize the database data beforehand, don't forget it~`**
+> Note: If you has been forked this project, need to sync the project's code, please see: https://xkcoding.com/2018/09/18/how-to-update-the-fork-project.html
 
-## Plan
+1. `git clone https://github.com/xkcoding/spring-boot-demo.git`
+2. Open the cloned project in IDEA
+3. Import the `pom.xml` file from the root directory using `Maven Projects` panel
+4. If you can not find `Maven Projects` panel, try to tick `View -> Tool Buttons` on and the `Maven Projects` panel will appear on the right side of IDEA.
+5. Find each Application class to run each module.
+6. **`Note: Each demo has a detailed README file. Remember to check it before running the demo~`**
+7. **`Note: In some condition you have to execute sql to prepare data before running demo, don't forget it~`**
+
+## TODO
 
 View the [TODO](./TODO.en.md) file
 
@@ -57,13 +63,13 @@ View the [TODO](./TODO.en.md) file
 | Module Name                                                  | Module Description                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [spring-boot-demo-helloworld](./spring-boot-demo-helloworld) | a helloworld demo.                                           |
-| [spring-boot-demo-properties](./spring-boot-demo-properties) | a demo to read the contents of the configuration file.       |
-| [spring-boot-demo-actuator](./spring-boot-demo-actuator)     | a demo to integrate spring-boot-starter-actuator for monitoring the startup and run status of Spring Boot. |
-| [spring-boot-demo-admin-client](./spring-boot-demo-admin-client) | a client demo to  integrate spring-boot-admin for visually monitoring the running status of the spring-boot program, it can be used with spring-boot-starter-actuator. |
-| [spring-boot-demo-admin-server](./spring-boot-demo-admin-server) | a server demo to  integrate spring-boot-admin for visually monitoring the running status of the spring-boot program, it can be used with spring-boot-starter-actuator. |
+| [spring-boot-demo-properties](./spring-boot-demo-properties) | a demo to read the contents of configuration file.           |
+| [spring-boot-demo-actuator](./spring-boot-demo-actuator)     | a demo to integrate spring-boot-starter-actuator for monitoring the starting status and the running status of application. |
+| [spring-boot-demo-admin-client](./spring-boot-demo-admin/spring-boot-demo-admin-client) | a client demo to  integrate spring-boot-admin for visually monitoring the running status of application, it can be used with spring-boot-starter-actuator. |
+| [spring-boot-demo-admin-server](./spring-boot-demo-admin/spring-boot-demo-admin-server) | a server demo to  integrate spring-boot-admin for visually monitoring the running status of the spring-boot program, it can be used with spring-boot-starter-actuator. |
 | [spring-boot-demo-logback](./spring-boot-demo-logback)       | a demo to integrate the logback for logging.                 |
 | [spring-boot-demo-log-aop](./spring-boot-demo-log-aop)       | a demo to record web request logs using AOP aspect.          |
-| [spring-boot-demo-exception-handler](./spring-boot-demo-exception-handler) | a demo to demonstrate global exception handling, including 2 types, the first one returns a  json structure, and the second one jumps to the exception page. |
+| [spring-boot-demo-exception-handler](./spring-boot-demo-exception-handler) | a demo to demonstrate global exception handling, including 2 types, the first one returns  json data, and the second one jumps to error page. |
 | [spring-boot-demo-template-freemarker](./spring-boot-demo-template-freemarker) | a demo to integrate Freemarker template engine.              |
 | [spring-boot-demo-template-thymeleaf](./spring-boot-demo-template-thymeleaf) | a demo to integrate Thymeleaf template engine.               |
 | [spring-boot-demo-template-beetl](./spring-boot-demo-template-beetl) | a demo to integrate Beetl template engine.                   |
@@ -72,7 +78,7 @@ View the [TODO](./TODO.en.md) file
 | [spring-boot-demo-orm-jpa](./spring-boot-demo-orm-jpa)       | a demo to integrate spring-boot-starter-data-jpa for operating database. |
 | [spring-boot-demo-orm-mybatis](./spring-boot-demo-orm-mybatis) | a demo to integrate native mybatis by using [mybatis-spring-boot-starter](https://github.com/mybatis/spring-boot-starter) dependency. |
 | [spring-boot-demo-orm-mybatis-mapper-page](./spring-boot-demo-orm-mybatis-mapper-page) | a demo to integrate [Mapper](https://github.com/abel533/Mapper) and [PageHelper](https://github.com/pagehelper/Mybatis-PageHelper) by using [mapper-spring-boot-starter](https://github.com/abel533/Mapper/tree/master/spring-boot-starter) and [pagehelper-spring-boot-starter](https://github.com/pagehelper/pagehelper-spring-boot) dependencies. |
-| [spring-boot-demo-orm-mybatis-plus](./spring-boot-demo-orm-mybatis-plus) | a demo to integrate [mybatis-plus](https://mybatis.plus/en/) by using [mybatis-plus-boot-starter](http://mp.baomidou.com/) dependency. |
+| [spring-boot-demo-orm-mybatis-plus](./spring-boot-demo-orm-mybatis-plus) | a demo to integrate [mybatis-plus](https://mybatis.plus/en/) by using [mybatis-plus-boot-starter](http://mp.baomidou.com/) dependency, integrate BaseMapper / BaseService / ActiveRecord to operate database. |
 | [spring-boot-demo-orm-beetlsql](./spring-boot-demo-orm-beetlsql) | a demo to integrate [beetl-sql](http://ibeetl.com/guide/#beetlsql) by using [beetl-framework-starter](http://ibeetl.com/guide/#beetlsql) dependency. |
 | [spring-boot-demo-upload](./spring-boot-demo-upload)         | a file upload demo, including local file upload and qiniu cloud file upload. |
 | [spring-boot-demo-cache-redis](./spring-boot-demo-cache-redis) | a demo to integrate redis, operate data in redis, and use redis to cache data. |
@@ -80,9 +86,9 @@ View the [TODO](./TODO.en.md) file
 | [spring-boot-demo-email](./spring-boot-demo-email)           | a demo to integrate email, including sending simple text email, HTML email (including template HTML email), attachment email, and static resource email. |
 | [spring-boot-demo-task](./spring-boot-demo-task)             | a demo to show easy to use scheduled task.                   |
 | [spring-boot-demo-task-quartz](./spring-boot-demo-task-quartz) | a demo to integrate quartz for managing scheduled tasks, including adding new scheduled tasks, deleting scheduled tasks, suspending scheduled tasks, restoring scheduled tasks, modifying scheduled task startup times, and timing task list queries, and `providing front-end pages`. |
-| [spring-boot-demo-task-xxl-job](./spring-boot-demo-task-xxl-job) | a demo to integrate [xxl-job](http://www.xuxueli.com/xxl-job/en/#/) for distributed scheduled tasks and provide methods to bypass the management of scheduled tasks by `xxl-job-admin`, including scheduled task lists, trigger lists, new scheduled tasks, deleted scheduled tasks, stopped scheduled tasks, and started scheduled tasks. Modify the scheduled task and manually trigger the scheduled task. |
-| [spring-boot-demo-swagger](./spring-boot-demo-swagger)       | a demo to integrate native `swagger` to manage and test API interfaces globally. |
-| [spring-boot-demo-swagger-beauty](./spring-boot-demo-swagger-beauty) | a demo to integrate third part of swagger dependency [swagger-bootstrap-ui](https://github.com/xiaoymin/Swagger-Bootstrap-UI) to beauty document style and  manage and test API interfaces globally. |
+| [spring-boot-demo-task-xxl-job](./spring-boot-demo-task-xxl-job) | a demo to integrate [xxl-job](http://www.xuxueli.com/xxl-job/en/#/) for distributed scheduled tasks and provide methods to manage scheduled tasks bypass `xxl-job-admin`, including scheduled task lists, trigger lists, new scheduled tasks, deleted scheduled tasks, stopped scheduled tasks, and started scheduled tasks. Modify the scheduled task and manually trigger the scheduled task. |
+| [spring-boot-demo-swagger](./spring-boot-demo-swagger)       | a demo to integrate native `swagger` to manage and test API interfaces. |
+| [spring-boot-demo-swagger-beauty](./spring-boot-demo-swagger-beauty) | a demo to integrate third part of swagger dependency [swagger-bootstrap-ui](https://github.com/xiaoymin/Swagger-Bootstrap-UI) to beautify document style and manage and test API interfaces. |
 | [spring-boot-demo-rbac-security](./spring-boot-demo-rbac-security) | a demo to integrate spring security implement privilege management based on RBAC privilege model, supports custom filtering request, dynamic privilege authentication, uses JWT security authentication, supports online population statistics, manually kicks out users, etc. |
 | [spring-boot-demo-rbac-shiro](./spring-boot-demo-rbac-shiro) | <span style="color:pink;">NOT FINISHED YET!</span> <br />a demo to integrate shiro for authentication management. |
 | [spring-boot-demo-session](./spring-boot-demo-session)       | a demo to integrate Spring Session to implement Session sharing, restart program Session does not expire. |
@@ -105,7 +111,7 @@ View the [TODO](./TODO.en.md) file
 | [spring-boot-demo-mongodb](./spring-boot-demo-mongodb)       | a demo to integrate MongoDB and use the official starter to CRUD. |
 | [spring-boot-demo-neo4j](./spring-boot-demo-neo4j)           | a demo to integrate Neo4j graph database to implement a campus character relationship network. |
 | [spring-boot-demo-docker](./spring-boot-demo-docker)         | docker container.                                            |
-| [spring-boot-demo-multi-datasource-jpa](./spring-boot-demo-multi-datasource-jpa) | spring-boot 使用JPA集成多数据源                              |
+| [spring-boot-demo-multi-datasource-jpa](./spring-boot-demo-multi-datasource-jpa) | a demo to implement JPA multi-datasource.                    |
 | [spring-boot-demo-multi-datasource-mybatis](./spring-boot-demo-multi-datasource-mybatis) | a demo to implement Mybatis multi-datasource by using an open source solution from Mybatis-Plus. |
 | [spring-boot-demo-sharding-jdbc](./spring-boot-demo-sharding-jdbc) | a demo to use `sharding-jdbc` to implement sub-database and sub-tables, while ORM uses Mybatis-Plus. |
 | [spring-boot-demo-tio](./spring-boot-demo-tio)               | <span style="color:pink;">NOT FINISHED YET!</span> <br />a demo to integrate t-io(a network programming framework like netty). |
@@ -113,6 +119,12 @@ View the [TODO](./TODO.en.md) file
 | [spring-boot-demo-codegen](./spring-boot-demo-codegen)       | a demo to integrate velocity template engine to implement code generator, improve development efficiency. |
 | [spring-boot-demo-graylog](./spring-boot-demo-graylog)       | a demo to integrate graylog for unified log collection.      |
 | spring-boot-demo-sso                                         | <span style="color:pink;">NOT FINISHED YET!</span> <br />a demo to integrate Single Sign On, see [ISSUE#12](https://github.com/xkcoding/spring-boot-demo/issues/12). |
+| [spring-boot-demo-ldap](./spring-boot-demo-ldap)             | a demo to integrate LADP to use `spring-boot-starter-data-ldap` to implement  CURD operations and give the login demo, see [ISSUE#23](https://github.com/xkcoding/spring-boot-demo/issues/23), thanks [@fxbin](https://github.com/fxbin). |
+| [spring-boot-demo-dynamic-datasource](./spring-boot-demo-dynamic-datasource) | a demo to add datasource dynamically, switch datasource dynamically. |
+| [spring-boot-demo-ratelimit-guava](./spring-boot-demo-ratelimit-guava) | a demo to use use Guava RateLimiter to protect API  by standalone rate limiting. |
+| [spring-boot-demo-ratelimit-redis](./spring-boot-demo-ratelimit-redis) | a demo to use Redis and Lua script implementation to protect API by distributed rate limiting. |
+| spring-boot-demo-https                                       | <span style="color:pink;">NOT FINISHED YET!</span> <br />a demo to integrate HTTPS. |
+| [spring-boot-demo-elasticsearch-rest-high-level-client](./spring-boot-demo-elasticsearch-rest-high-level-client) | a demo to integrate ElasticSearch 7.x version by using official Rest High Level Client to operate ES data. |
 
 ## License
 
@@ -142,8 +154,7 @@ Copyright (c) 2018 Yangkai.Shen
     <module>spring-boot-demo-helloworld</module>
     <module>spring-boot-demo-properties</module>
     <module>spring-boot-demo-actuator</module>
-    <module>spring-boot-demo-admin-client</module>
-    <module>spring-boot-demo-admin-server</module>
+    <module>spring-boot-demo-admin</module>
     <module>spring-boot-demo-logback</module>
     <module>spring-boot-demo-log-aop</module>
     <module>spring-boot-demo-exception-handler</module>
@@ -194,6 +205,11 @@ Copyright (c) 2018 Yangkai.Shen
     <module>spring-boot-demo-tio</module>
     <module>spring-boot-demo-codegen</module>
     <module>spring-boot-demo-graylog</module>
+    <module>spring-boot-demo-ldap</module>
+    <module>spring-boot-demo-dynamic-datasource</module>
+    <module>spring-boot-demo-ratelimit-guava</module>
+    <module>spring-boot-demo-ratelimit-redis</module>
+    <module>spring-boot-demo-elasticsearch-rest-high-level-client</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -208,8 +224,8 @@ Copyright (c) 2018 Yangkai.Shen
     <maven.compiler.target>1.8</maven.compiler.target>
     <spring.boot.version>2.1.0.RELEASE</spring.boot.version>
     <mysql.version>8.0.12</mysql.version>
-    <hutool.version>4.5.1</hutool.version>
-    <guava.version>27.0.1-jre</guava.version>
+    <hutool.version>4.6.6</hutool.version>
+    <guava.version>28.1-jre</guava.version>
     <user.agent.version>1.20</user.agent.version>
   </properties>
 
@@ -332,3 +348,15 @@ Copyright (c) 2018 Yangkai.Shen
 | spring-boot-starter-web                | Support for full-stack web development, including Tomcat and spring-webmvc. |
 | spring-boot-starter-websocket          | Support for WebSocket development.                           |
 | spring-boot-starter-ws                 | Support for Spring Web Services.                             |
+
+### Recommended  Open source
+
+- `JustAuth`：The most comprehensive open source library for third-party logins in history，https://github.com/justauth/JustAuth
+- `Mica`：Spring Boot microservices efficient development toolset，https://github.com/lets-mica/mica
+- `awesome-collector`：https://github.com/P-P-X/awesome-collector
+- `SpringBlade`：Complete micro-service online solution (required for enterprise development)，https://github.com/chillzhuang/SpringBlade
+- `Pig`：The universe's strongest micro-service certification authorized scaffolding (architect necessary)，https://github.com/pigxcloud/pig
+
+### Advertisement
+
+[![JD_CLOUD](assets/jdcloud.jpg)](https://re.jdcloud.com/cps?returnUrl=aHR0cHM6Ly93d3cuamRjbG91ZC5jb20vY24vYWN0aXZpdHkveWVhci1lbmQ_bUlkPTE4JmNwc0tleT1iMjg2Y2Q0ZmExMWM0ODZhODU2NmUwNjc5MGQ0MzY4MA==)
